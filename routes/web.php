@@ -31,12 +31,15 @@ Route::group(['middleware'=>['sess']], function(){
     Route::get('/admin/customer/delete/{id}', 'UserController@delete')->name('admin.delete');
     Route::post('/admin/customer/delete/{id}', 'UserController@destroy')->name('admin.destroy');
 
+    // customer
+     Route::get('/customer', 'UserController@index')->name('user.index');
+     Route::get('/')
+
     ///book
     Route::get('/admin/addBook', 'BookController@create')->name('admin.create');
     Route::post('/admin/addBook', 'BookController@store')->name('admin.store');
     Route::get('/admin/bookList', 'BookController@Booklist')->name('admin.bookList');
     
-    // customer
-    Route::get('/customer', 'UserController@index')->name('user.index');
+   
    
 });

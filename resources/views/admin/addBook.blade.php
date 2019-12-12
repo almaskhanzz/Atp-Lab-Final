@@ -9,6 +9,15 @@
 	<a href="{{route('logout.index')}}">logout</a> <br><br>
 	
 	<form method="post">
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li><font color="red">{{ $error }}</font></li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 	<table border="3">
 		<tr>
 			<td>Book Name</td>

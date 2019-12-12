@@ -8,6 +8,7 @@
 	<a href="<?php echo e(route('admin.show')); ?>">View Profile</a>
     <a href="<?php echo e(route('admin.userList')); ?>">Customer List</a>
 	<a href="<?php echo e(route('admin.create')); ?>">Add Book</a>
+	<a href="<?php echo e(route('admin.bookList')); ?>">Book List</a>
 	<a href="<?php echo e(route('logout.index')); ?>">logout</a>
 
 </body>

@@ -13,6 +13,14 @@ class BookController extends Controller
     //store
     public function store(Request $request)
     {
+        //validation
+        $validatedData = $request->validate([
+            'bookname' => 'required|string',
+            'booktitle' => 'required|string',
+            'category' => 'required|string',
+            'price' => 'required|string',
+        ]);
+        //
         $book = new Book();
         $book->bookname = $request->bookname;
         $book->booktitle = $request->booktitle;
@@ -20,7 +28,7 @@ class BookController extends Controller
         $book->price = $request->price;
         if($book->save())
         {
-            return redirect()->route('admin.bookList');
+            return redirect()->route('admin.index');
         }
     }
     public function show($id)

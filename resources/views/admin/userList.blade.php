@@ -12,10 +12,10 @@
 	<table border="4">
 		<thead>
 			<tr>
-				<th>Name</th>
-				<th>User Name</th>
+				<th width="20%">Name</th>
+				<th width="20%">User Name</th>
 				
-				<th>ACTION</th>
+				<th width="20%"h>ACTION</th>
 			</tr>
 		</thead>
 
@@ -24,8 +24,8 @@
 			<tr>
 				<td>{{$s->name}}</td>
 				<td>{{$s->username}}</td>
-                <td>
-                <a href="{{route('admin.delete',$s->id)}}">Delete</a> | 
+                <td th width="20%">
+                <a href="{{route('admin.delete',$s->id)}}">Delete</a>
                 </td>
 				
 			</tr>

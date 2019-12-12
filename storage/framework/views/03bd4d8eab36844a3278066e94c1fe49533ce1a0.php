@@ -11,12 +11,12 @@
 	<table border="4">
 		
 		<tr>
-			<td>User Name</td>
-			<td><?php echo e($user->username); ?></td>
+			<td width="20%">User Name</td>
+			<td width="20%"><?php echo e($user->username); ?></td>
 		</tr>
 		<tr>
-			<td>Name</td>
-			<td><?php echo e($user->name); ?></td>
+			<td width="20%">Name</td>
+			<td width="20%"><?php echo e($user->name); ?></td>
 		</tr>
 
 	</table>

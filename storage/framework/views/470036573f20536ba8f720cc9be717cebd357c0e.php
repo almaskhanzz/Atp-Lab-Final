@@ -12,10 +12,10 @@
 	<table border="4">
 		<thead>
 			<tr>
-				<th>Name</th>
-				<th>User Name</th>
+				<th width="20%">Name</th>
+				<th width="20%">User Name</th>
 				
-				<th>ACTION</th>
+				<th width="20%"h>ACTION</th>
 			</tr>
 		</thead>
 
@@ -24,8 +24,8 @@
 			<tr>
 				<td><?php echo e($s->name); ?></td>
 				<td><?php echo e($s->username); ?></td>
-                <td>
-                <a href="<?php echo e(route('admin.delete',$s->id)); ?>">Delete</a> | 
+                <td th width="20%">
+                <a href="<?php echo e(route('admin.delete',$s->id)); ?>">Delete</a>
                 </td>
 				
 			</tr>

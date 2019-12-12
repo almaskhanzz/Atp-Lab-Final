@@ -11,12 +11,12 @@
 	<table border="4">
 		
 		<tr>
-			<td>User Name</td>
-			<td>{{$user->username}}</td>
+			<td width="20%">User Name</td>
+			<td width="20%">{{$user->username}}</td>
 		</tr>
 		<tr>
-			<td>Name</td>
-			<td>{{$user->name}}</td>
+			<td width="20%">Name</td>
+			<td width="20%">{{$user->name}}</td>
 		</tr>
 
 	</table>
